@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meemix</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./Images/meemix-favicon-color.png">
 </head>
+
 <body>
-    <h2>Instant Giggles, One Meme at a Time</h2>
+    <header>
+        <img class="logo" src="./Images/meemix-high-resolution-logo (1).png" alt="">
+        <img class="header-title" src="./Images/Meemix-Title.png" alt="">
+    </header>
+    <div class="main-container">
+        <h2>Instant Giggles, One Meme at a Time</h2>
+        <div class="meme-container">
+            <img class="meme" id="meme" src="./Images/meemix-high-resolution-logo (1).png" alt="">
+            <div class="button-div">
+                <button onclick="getMeme(api_url);" class="meme-btn">New Meme</button>
+                <button onclick="tweet()" class="share-btn"><img src="./images/twitter.png"> Share</button> 
+            </div>
+            
+        </div>
+    </div>
+    
+<script src="./script.js" ></script>
 </body>
+
 </html>

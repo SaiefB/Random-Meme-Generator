@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+:root {
+    --Main-BG-color: #2A2A2A;
+    --header-color: #383838;
+    --text-colour: #fff;
+    --H2-colour: #BAB920;
+    --button-BG-color-Secondary: #9DC83B;
+    --button-BG-color-Primary: #BAB920;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px 20px 20px;
+    align-items: center;
+
+}
+
+.logo {
+    width: 150px;
+}
+
+.header-title {
+    width: 300px;
+    height: 70px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--Main-BG-color);
+    color: var(--text-colour);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin: 100px 40px 50px 40px;
+    text-align: center;
+    color: var(--H2-colour);
+    font-size: 2em;
+}
+
+.meme {
+    height: 300px;
+    margin: 10px;
+    max-width: 600px;
+}
+
+.meme-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px 0;
+    max-width: 600px;
+    background-color: var(--header-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button-div {
+    margin: 20px
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--button-BG-color-Primary);
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: var(--button-BG-color-Secondary);
+}
